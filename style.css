@@ -1,19 +1,40 @@
 body{
-    background-color: #d95752;
+    background-image: url(sparkle.gif);
+    background-size: cover; 
 }
 @font-face {
     font-family: 'Christmas'; /*a name to be used later*/
     src: url('Vintage\ Christmas.ttf'); /*URL to font*/
 }
-div{
-    background-color: white;
-    border: 5px solid #bdfaac;
-    border-radius: 20px;
-    padding: 10px; 
-    margin-bottom: 10px; 
+#ya{
+ background-color: white;
+    border: 10px solid transparent; /* Make border transparent to show border-image */
+    border-radius: 20px; /* Apply rounded corners */
+    border-image: linear-gradient(45deg, red 25%, green 25%, green 50%, red 50%, red 75%, green 75%, green) 1;
+    padding: 10px;
+    margin-bottom: 10px;
     width: 500px;
     font-size: 20px;
     font-family: 'Christmas';
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+
+/* Grid container setup */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Grid item styling */
+.grid-item {
+    border: 1px solid #ddd; /* Optional border for visibility */
+    padding: 10px;
+    background-color: #f9f9f9; /* Optional background color */
+    box-sizing: border-box;
+    height: auto; /* Ensure each item grows naturally based on its content */
 }
 
 

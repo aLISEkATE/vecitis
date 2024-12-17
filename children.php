@@ -29,8 +29,8 @@ $posts=$db->query("SELECT
 FROM 
     children
 LEFT JOIN 
-    letters ON children.id = letters.sender_id
-")->fetchAll();
+    letters ON children.id = letters.sender_id"
+    )->fetchAll();
 
 
     //$comments = $db->query("SELECT * FROM comments")->fetchAll(PDO::FETCH_ASSOC);
