@@ -5,10 +5,10 @@ function dd($data){
     foreach ($data as $x) {
          
     $letter = $x['letter_text'] ? $x['letter_text'] : 'No letter assigned.';
-    echo '<div style="border: 1px solid black; padding: 10px; margin-bottom: 10px; width: 200px;">';
-    echo '<p><strong>Name:</strong> ' . $x['firstname'] . " " . $x['surname'] . '</p>';
-    echo '<p><strong>Age:</strong> ' . $x['age'] . ' gadi</p>';
-    echo '<p><strong>Letter:</strong> ' . $letter . '</p>';
+    echo '<div style="border: 5px solid green; padding: 10px; margin-bottom: 10px; width: 500px;">';
+    echo '<p><strong class="meow">Name:</strong> ' . $x['firstname'] . " " . $x['surname'] . '</p>';
+    echo '<p><strong class="meow">Age:</strong> ' . $x['age'] . ' gadi</p>';
+    echo '<p><strong class="meow">Letter:</strong> ' . $letter . '</p>';
     echo '</div>';
     }
     die();

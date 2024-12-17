@@ -1,9 +1,13 @@
+<link rel='stylesheet' href='style.css' type='text/css'>
+<body>
+
 <?php
 require "functions.php";
 require "Database.php";
+
 $config= require("config.php");
 
-echo "hiiiiiiiiiiiiiii :3 <br>";
+
 
 
 //1. database +
@@ -38,3 +42,4 @@ dd($posts);
 //API foreach
 
 ?>
+</body>
