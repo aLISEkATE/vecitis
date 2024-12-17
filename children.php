@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='style.css' type='text/css'>
 <body>
-
+<h1>BĒRNI</h1>
 <?php
 require "functions.php";
 require "Database.php";
@@ -19,7 +19,8 @@ $config= require("config.php");
 
 $db= new Database($config["database"]);
     //iegut bloga ierakstus
-$posts=$db->query("SELECT * FROM children")->fetchAll();
+$posts1=$db->query("SELECT * FROM gifts")->fetchAll();
+$posts2=$db->query("SELECT * FROM children")->fetchAll();
 $posts=$db->query("SELECT 
     children.firstname, 
     children.middlename, 

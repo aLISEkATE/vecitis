@@ -1,24 +1,45 @@
 body{
-    background-image: url(sparkle.gif);
+    background-image: url(woah.gif);
     background-size: cover; 
+}
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
 }
 @font-face {
     font-family: 'Christmas'; /*a name to be used later*/
-    src: url('Vintage\ Christmas.ttf'); /*URL to font*/
+    src: url('Vintage Christmas.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Header'; /*a name to be used later*/
+    src: url('Christmas Cat.ttf'); /*URL to font*/
+}
+h1{
+    font-family:'Header';
+    color: black;
+    text-align:center;
+    font-size: 50px;
+    
 }
 #ya{
  background-color: white;
     border: 10px solid transparent; /* Make border transparent to show border-image */
-    border-radius: 20px; /* Apply rounded corners */
-    border-image: linear-gradient(45deg, red 25%, green 25%, green 50%, red 50%, red 75%, green 75%, green) 1;
+    border-image: linear-gradient(45deg, #ffa29c 25%, #b3ff9c 25%, #b3ff9c 50%, #ffa29c 50%, #ffa29c 75%, #b3ff9c 75%, #b3ff9c) 1;
     padding: 10px;
     margin-bottom: 10px;
     width: 500px;
     font-size: 20px;
     font-family: 'Christmas';
     box-sizing: border-box; /* Ensures padding is included in the width */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);/* Red and green glow */
+    transition: all 0.3s ease;
 }
 
+#ya:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 200, 200, 0.5); /* Increase the glow and add a red tint */
+    transform: scale(1.05); /* Slightly enlarge the element */
+}
 
 /* Grid container setup */
 .grid-container {
