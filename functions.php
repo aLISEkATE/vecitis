@@ -8,15 +8,9 @@ function dd($data, $gifts = []) {
     
     foreach ($data as $x) {
         $letter = $x['letter_text'] ? $x['letter_text'] : 'No letter assigned.';
-        
-        // Highlight matching words between letter_text and gift names
-        foreach ($gifts as $gift) {
-            // Check if the gift name matches any part of the letter text
-            $letter = highlightMatches($letter, $gift['name']);
-        }
 
         echo '<div id="ya" class="grid-item" style="padding: 10px; margin-bottom: 10px; width: 500px;">';
-        echo '<p><strong class="meow">Vārds:</strong> ' . $x['firstname'] . " " . $x['surname'] . '</p>';
+        echo '<p><strong class="meow">Vārds:</strong> ' . $x['firstname'] . " " . $x['middlename'] . " " . $x['surname'] . '</p>';
         echo '<p><strong class="meow">Vecums:</strong> ' . $x['age'] . ' gadi</p>';
         echo '<p><strong class="meow">Vēstule:</strong> ' . $letter . '</p>';
         echo '</div>';
